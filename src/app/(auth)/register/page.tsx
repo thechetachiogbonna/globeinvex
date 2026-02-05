@@ -83,7 +83,7 @@ function Register() {
   }
 
   return (
-    <>
+    <Suspense fallback={<div className="text-center">Loading...</div>}>
       <div className="w-full max-w-md bg-white rounded-md shadow-md">
         <div className="p-[90px]">
           <Image 
@@ -219,7 +219,7 @@ function Register() {
           }}
         />
       )}
-    </>
+    </Suspense>
   )
 }
 
