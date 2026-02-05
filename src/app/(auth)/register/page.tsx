@@ -7,7 +7,7 @@ import { generateUniqueUsername } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState, Suspense } from "react";
 
 function Register() {
   const [isAllFieldRequired, setIsAllFieldRequired] = useState(false)
