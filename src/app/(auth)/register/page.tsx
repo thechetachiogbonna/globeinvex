@@ -32,7 +32,6 @@ function Register() {
       const form = document.querySelector("form")!
       const formData = new FormData(form)
       formData.append("referralId", "chetachi")
-      console.log(form, formData)
     }
   }, [registeredSuccessfully])
 
